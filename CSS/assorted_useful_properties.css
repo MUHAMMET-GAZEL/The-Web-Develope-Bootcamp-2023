@@ -1,0 +1,96 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(138, 111, 111);
+    display: inline-block;
+    margin: 10px;
+    border: solid black 2px;
+}
+
+section {
+    margin-top: 200px;
+}
+
+#static {
+    margin-top: 0px;
+}
+
+#mid {
+    background-color: aqua;
+}
+
+#static #mid {
+    position: static;
+    top: 50px;
+    left: 50px;
+}
+
+#relative #mid {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute #mid {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#fixed #mid {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+hr {
+    background-color: black;
+    height: 5px;
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    /*transition: 3s;*/
+    transition-delay: 1s;
+    transition: border-radius 2s, background-color 5s;
+
+}
+
+#circle:hover {
+    background-color: coral;
+    border-radius: 50%;
+}
+
+
+.timing_function {
+    width: 50px;
+    height: 50px;
+    background-color: chartreuse;
+    border-width: 3px;
+    border-color: blueviolet;
+    display: block;
+    transition: margin-left 3s;
+}
+
+#test:hover .timing_function {
+    margin-left: 500px;
+}
+
+#test div:nth-child(1) {
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: aliceblue;
+}
+
+#test div:nth-child(2) {
+    transition-timing-function: ease-in-out;
+}
+
+#test div:nth-child(3) {
+    transition-timing-function: ease-out;
+}
+
+#test div:nth-child(4) {
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
