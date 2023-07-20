@@ -62,7 +62,7 @@ if (password.length >= 6) {
 10-65 20$
 65+ free 
 */
-const age = prompt("Pleaseenter your age:");
+const age = prompt("Please enter your age:");
 
 if (age > 0 && age < 5 || age >= 65) {
     console.log("FREE!");
@@ -73,3 +73,53 @@ if (age > 0 && age < 5 || age >= 65) {
 } else {
     console.log("INVALID AGE!");
 }
+
+//push()
+let movieLine = ['tom', 'nancy'];
+movieLine.push('oliver');
+console.log(movieLine);
+
+//pop()
+movieLine.pop();
+console.log(movieLine);
+
+//shift()
+movieLine.shift();
+console.log(movieLine);
+
+//unshift()
+movieLine.unshift('Ahmed');
+console.log(movieLine);
+
+//concat()
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
+console.log(array3);
+
+//includes()
+const arr1 = [1, 2, 3];
+console.log(arr1.includes(2));
+
+//indexOf()
+const colors = ['blue', 'red', 'green'];
+console.log(colors.indexOf('red'));
+console.log(colors.indexOf('black'));
+
+//reverse()
+const ex1 = ['one', 'two', 'three'];
+const reversed = ex1.reverse();
+console.log(reversed);
+
+//slice()
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+console.log(animals.slice(2));
+console.log(animals.slice(2, 4));
+console.log(animals.slice(-2));
+
+//splice()
+let colours = ['blue', 'red', 'green', 'yellow', 'black', 'white', 'orange'];
+colours.splice(5, 1);
+console.log(colours);
+console.log(colours.splice(3, 0, 'cyan'));
+
