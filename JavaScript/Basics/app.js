@@ -60,8 +60,9 @@ if (password.length >= 6) {
 0-5 free
 5-10 10$
 10-65 20$
-65+ free 
+65+ free
 */
+/*
 const age = prompt("Please enter your age:");
 
 if (age > 0 && age < 5 || age >= 65) {
@@ -73,8 +74,12 @@ if (age > 0 && age < 5 || age >= 65) {
 } else {
     console.log("INVALID AGE!");
 }
+*/
 
+//parseInt() converts string to a number , if there were letters in the string it ignores them.
+//length() returns the length of a string.
 //push()
+/*
 let movieLine = ['tom', 'nancy'];
 movieLine.push('oliver');
 console.log(movieLine);
@@ -122,4 +127,5 @@ let colours = ['blue', 'red', 'green', 'yellow', 'black', 'white', 'orange'];
 colours.splice(5, 1);
 console.log(colours);
 console.log(colours.splice(3, 0, 'cyan'));
+*/
 
