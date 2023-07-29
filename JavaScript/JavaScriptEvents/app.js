@@ -1,3 +1,4 @@
+/*
 const btn = document.querySelector('#v2');
 btn.onclick = function () {
     console.log("YOU CLICKED ME!");
@@ -34,10 +35,55 @@ RandColorBtn.addEventListener('click', RandBodyColor);
 
 ///////////////////////////////////////////////////////////////////////////
 
-const btnsRandBgColor = document.querySelectorAll(".RandomBackgroundColor");
+const btns = document.querySelectorAll('button');
 
-for (let i of btnsRandBgColor) {
-    i.addEventListener('click', function () {
-        i.style.backgroundColor = GenerateRandColor();
-    }, { once: true })
+for (let i of btns) {
+    i.addEventListener('click', colorize)
 }
+
+const h1s = document.querySelectorAll('h1');
+
+for (let h1 of h1s) {
+    h1.addEventListener('click', colorize)
+}
+
+function colorize() {
+    this.style.backgroundColor = GenerateRandColor();
+    this.style.color = GenerateRandColor();
+}
+*/
+
+///////////////////////////////////////////////////////////////////////////
+
+document.querySelector('button').addEventListener('click', function (e) {
+    console.log(e);
+})
+
+const input = document.querySelector('input');
+
+input.addEventListener('keydown', function (e) {
+    console.log(e.key);
+    console.log(e.code);
+})
+input.addEventListener('keyup', function () {
+    console.log("KEYUP");
+})
+
+window.addEventListener('keydown', function (e) {
+    switch (e.code) {
+        case 'ArrowUp':
+            console.log('UP!');
+            break;
+        case 'ArrowDown':
+            console.log('Down!');
+            break;
+        case 'ArrowLeft':
+            console.log('Left!');
+            break;
+        case 'ArrowRight':
+            console.log('Right!');
+            break;
+        default:
+            console.log('Ignored');
+    }
+})
