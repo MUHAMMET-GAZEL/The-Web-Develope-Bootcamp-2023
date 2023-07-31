@@ -1,18 +1,7 @@
-img {
-    width: 50%;
+.winner {
+    color: green;
 }
 
-.toleft {
-    width: 50%;
-    margin-left: 25%;
-}
-
-.row {
-    margin-bottom: 10px;
-}
-
-select {
-    border-radius: 290486px;
-    padding-left: 10px;
-    padding-right: 2.5em;
+.loser {
+    color: red;
 }
